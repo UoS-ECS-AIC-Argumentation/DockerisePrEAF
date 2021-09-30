@@ -13,7 +13,7 @@ python3 build_image.py
 docker build -t uos/preaf:latest . --no-cache
 ```
 
-## Using the already built image 
+## Using an already built image 
 - Load `uos/preaf:1.0` docker image by:
 
 ```
