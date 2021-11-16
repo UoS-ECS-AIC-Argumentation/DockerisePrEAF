@@ -1,7 +1,0 @@
-version: '3'
-services:
-  preaf:
-    image: uos/preaf
-    volumes:
-        - ./examples/:/home/examples/
-    command: /home/runner.sh --input /home/examples/barabasi.peaf -type con_approx -e 0.01 --noThreads 4

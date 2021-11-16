@@ -8,9 +8,11 @@ ADD org.tweetyproject.arg.peaf-1.19-SNAPSHOT-with-dependencies.jar /home/
 ADD org.tweetyproject.arg.peaf-1.19-SNAPSHOT.jar /home/
 ADD org.tweetyproject.arg.peaf-1.19-SNAPSHOT-sources.jar /home/
 
-ADD runner.sh /home/
+ADD peaf_runner.sh /home/
+ADD aif_runner.sh /home/
 
-RUN chmod +x runner.sh
+RUN chmod +x peaf_runner.sh
+RUN chmod +x aif_runner.sh
 
 # This is a hacky solution to stop getting these errors:
 # > Error: Unable to initialize main class org.tweetyproject.arg.peaf.Runner
@@ -20,4 +22,4 @@ ADD clean_keys.sh /home/
 RUN chmod +x clean_keys.sh
 RUN ./clean_keys.sh; exit 0;
 
-ENTRYPOINT ["/home/runner.sh"]
+ENTRYPOINT ["/home/aif_runner.sh"]
