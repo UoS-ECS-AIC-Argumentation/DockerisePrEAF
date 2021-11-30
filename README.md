@@ -14,10 +14,10 @@ docker build -t uos/preaf:latest . --no-cache
 ```
 
 ## Using an already built image 
-- Load `uos/preaf:1.0` docker image by:
+- Load `uos/preaf:2.0` docker image by:
 
 ```
-docker load -i preaf-1.0.tar.gz
+docker load -i preaf-2.0.tar.gz
 ```
 
 ## Running the PEAF solver (with an example)
