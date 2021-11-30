@@ -52,14 +52,15 @@ docker-compose -f aif_docker-compose.yaml up
 - `aif_docker-compose.yaml` file can be edited to test other examples by editing command line. Some other arguments of the solver are:
 
 ```
-Missing required options: i, q
 usage: AIFSolver
- -e,--errorLevel <arg>   The error level for `approx` and `con_approx`
-                         (default=0.01)
- -i,--input <arg>        AIF file path (required)
- -j,--noThreads <arg>    The number of threads (for `con_exact` and
-                         `con_approx`) (default=1)
- -q,--query <arg>        Query file path (required)
- -t,--type <arg>         The algorithm type: `exact`, `con_exact`,
-                         `approx` and `con_approx`) (default=`approx`)
+ -e,--errorLevel <arg>    The error level for `approx` and `con_approx`
+                          (default=0.01)
+ -i,--input <arg>         AIF file path (.json) (required)
+ -j,--noThreads <arg>     The number of threads (for `con_exact` and
+                          `con_approx`) (default=1)
+ -q,--query <arg>         Query file path (.json) (required)
+ -t,--type <arg>          The algorithm type: `exact`, `con_exact`,
+                          `approx` and `con_approx`) (default=`approx`)
+ -u,--uncertainty <arg>   Uncertainty table file path (.json) (optional,
+                          otherwise probabilities will be 0.5.)
 ```

@@ -3,5 +3,5 @@ services:
   preaf:
     image: uos/preaf
     volumes:
-        - ./examples/:/home/examples/
-    command: /home/peaf_runner.sh --input /home/examples/barabasi.peaf -type con_approx -e 0.01 --noThreads 4
+        - ./examples/peaf/:/home/examples/
+    entrypoint: /home/peaf_runner.sh --input /home/examples/barabasi.peaf -type con_approx -e 0.01 --noThreads 4

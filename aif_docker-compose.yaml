@@ -3,5 +3,5 @@ services:
   preaf:
     image: uos/preaf
     volumes:
-        - ./examples/:/home/examples/
-    command: /home/aif_runner.sh --input /home/examples/5.json --query /home/examples/5_query.json -type con_approx -e 0.01 --noThreads 4
+        - ./examples/aif/:/home/examples/
+    entrypoint: /home/aif_runner.sh -i /home/examples/aif-cap-phase4.json -q /home/examples/aif-cap-phase4_query.json -u /home/examples/aif-cap-phase4_yardstick.json -t con_approx -e 0.01 -j 4
