@@ -1,7 +1,0 @@
-version: '3'
-services:
-  preaf:
-    image: uos/preaf
-    volumes:
-        - ./examples/aif/:/home/examples/
-    entrypoint: /home/aif_runner.sh -i /home/examples/aif-cap-phase4.json -q /home/examples/aif-cap-phase4_query.json -u /home/examples/aif-cap-phase4_yardstick.json -t con_approx -e 0.01 -j 4

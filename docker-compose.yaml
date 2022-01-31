@@ -1,0 +1,7 @@
+version: '3'
+services:
+  preaf:
+    image: uos/preaf:3.0
+    volumes:
+        - ./examples/:/home/examples/
+    entrypoint: /home/runner.sh -i /home/examples/aif-cap-phase4.json -o /home/examples/aif-cap-phase4-output.json
