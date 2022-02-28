@@ -10,14 +10,14 @@ python3 build_image.py
 - or (without the build script)
 
 ```
-docker build -t "uos/preaf:3.0" . --no-cache
+docker build -t "uos/preaf:4.0" . --no-cache
 ```
 
 ## Using an already built image 
-- Load `uos/preaf:3.0` docker image by:
+- Load `uos/preaf:4.0` docker image by:
 
 ```
-docker load -i preaf-3.0.tar.gz
+docker load -i preaf-4.0.tar.gz
 ```
 
 ## Running the AIF solver (with an example)
