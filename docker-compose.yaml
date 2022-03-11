@@ -1,7 +1,7 @@
 version: '3'
 services:
   preaf:
-    image: uos/preaf:4.0
+    image: uos/preaf:4.1
     volumes:
         - ./examples/:/home/examples/
-    entrypoint: /home/runner.sh -i /home/examples/aif-cap-phase4.json -o /home/examples/aif-cap-phase4-output.json
+    entrypoint: /home/runner.sh -i /home/examples/hijacking_of_aegean_fourth.json -o /home/examples/hijacking_of_aegean_fourth-output.json
